@@ -96,6 +96,7 @@ vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA
     OPTIONS ${FEATURE_OPTIONS}
+        -DCMAKE_DEBUG_POSTFIX="d"
         -DBUILD_TESTING=OFF
         -DBUILD_EXAMPLES=OFF
         -DVTK_INSTALL_INCLUDE_DIR=include
